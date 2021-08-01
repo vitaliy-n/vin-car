@@ -6,22 +6,108 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
+    <!--    font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"/>
+    <!-- MDB -->
+    <link rel="stylesheet" href="./css/mdb.min.css"/>
+
     <title>Vin Car</title>
 </head>
 <body>
+<header class="header">
+    <nav class="header__top navbar sticky-top  navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img
+                        src="img/logo.svg"
+                        height="50"
+                        alt="logo"
+                        loading="lazy"
+                />
+            </a>
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Про нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Калькулятор</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Послуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Каталог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Відгуки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Контакти</a>
+                    </li>
+                </ul>
+                <div class="header_socials">
+                    <a href="#" class="social_media">
+                        <i class="fab fa-instagram text-white"></i>
+                    </a>
+                    <a href="#" class="social_media">
+                        <i class="fab fa-facebook text-white"></i>
+                    </a>
+                    <a href="#" class="social_media">
+                        <i class="fab fa-viber text-white"></i>
+                    </a>
+                    <a href="#" class="social_media">
+                        <i class="fab fa-whatsapp text-white"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
 <section class="hero">
     <div class="container">
-        <div class="hero-inner">
+        <div class="hero-inner row">
             <h1 class="hero-title">Авто з Європи</h1>
             <p class="hero-description">Підбір, пригін, розмитнення та безкоштовна консультація</p>
-            <div class="hero-button">Прорахувати</div>
-            <div class="hero-calc"></div>
-            <div class="hero-calc-text"></div>
+            <div class="hero-button">
+                <a class="hero-button__link" href="#viber">Прорахувати авто</a></div>
+            <a href="#calc"><img class="hero-calc" src="img/icon_calc.svg" alt="calc_img"></a>
+            <div class="hero-calc-text">
+                <a class="hero-calc-text__link" href="#calc">Калькулятор розмитнення “євроблях”</a>
+            </div>
             <div class="socials">
-                <div class="socials__instagram"></div>
-                <div class="socials__facebook"></div>
-                <div class="socials__viber"></div>
-                <div class="socials__whatsapp"></div>
+                <div class="socials__instagram ">
+                    <a href="#inst">
+                        <i class="fab fa-instagram socials__item white-color"></i>
+                    </a>
+                </div>
+                <div class="socials__facebook ">
+                    <a href="#facebook">
+                        <i class="fab fa-facebook socials__item white-color"></i>
+                    </a>
+                </div>
+                <div class="socials__viber ">
+                    <a href="#viber">
+                        <i class="fab fa-viber socials__item white-color"></i>
+                    </a>
+                </div>
+                <div class="socials__whatsapp ">
+                    <a href="#whatsapp">
+                        <i class="fab fa-whatsapp socials__item white-color"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -126,34 +212,47 @@
                 <div class="services__item">
                     <div class="services-item__img-1"></div>
                     <div class="services-item__title">Персональний підбір та пригін</div>
-                    <div class="services-item__text">Відповідно до Ваших побажань і матеріальних можливостей, наші фахівці виконують пошук, підбір, перевірку, викуп та пригін найоптимальнішого варіанту авто.
-                        Також ми беремо на себе повну відповідальність за пригін Вашого автомобіля. </div>
+                    <div class="services-item__text">Відповідно до Ваших побажань і матеріальних можливостей, наші
+                        фахівці виконують пошук, підбір, перевірку, викуп та пригін найоптимальнішого варіанту авто.
+                        Також ми беремо на себе повну відповідальність за пригін Вашого автомобіля.
+                    </div>
                 </div>
                 <div class="services__item">
                     <div class="services-item__img-2"></div>
                     <div class="services-item__title">Митно-брокерські послуги</div>
-                    <div class="services-item__text">- Декларування та розмитнення транспортних засобів без завищення митних платежів;
+                    <div class="services-item__text">- Декларування та розмитнення транспортних засобів без завищення
+                        митних платежів;
                         - Подання попередньої декларації (ПД);
                         - Розмитнення «Євроблях» без завищення митних платежів;
                         - Зняття з обліку в країнах реєстрації;
-                        - Розрахунок митних платежів.</div>
+                        - Розрахунок митних платежів.
+                    </div>
                 </div>
                 <div class="services__item">
                     <div class="services-item__img-3"></div>
                     <div class="services-item__title">Повний супровід</div>
-                    <div class="services-item__text">Для тих, хто вперше бажає самостійно пригнати автомобіль з країн Євросоюзу, ми з радістю проконсультуємо, здійснемо калькуляцію очікуваних витрат, надамо постійну підтримку протягом процесу та покрокову інструкцію.</div>
+                    <div class="services-item__text">Для тих, хто вперше бажає самостійно пригнати автомобіль з країн
+                        Євросоюзу, ми з радістю проконсультуємо, здійснемо калькуляцію очікуваних витрат, надамо
+                        постійну підтримку протягом процесу та покрокову інструкцію.
+                    </div>
                 </div>
                 <div class="services__item">
                     <div class="services-item__img-4"></div>
                     <div class="services-item__title">Cертифікації та постановка на облік</div>
-                    <div class="services-item__text">Ви можете зареєструвати автомобіль в Сервісному центрі самостійно, а перед тим пройти сертифікацію, але чи потрібно це Вам? Коли наша команда залюбки допоможе в цьому і збереже Ваш час.</div>
+                    <div class="services-item__text">Ви можете зареєструвати автомобіль в Сервісному центрі самостійно,
+                        а перед тим пройти сертифікацію, але чи потрібно це Вам? Коли наша команда залюбки допоможе в
+                        цьому і збереже Ваш час.
+                    </div>
                 </div>
 
             </div>
             <div class="services__more">
-                <div class="services-more__title">Щоб дізнатись вартісь розмитнення, автомобіля який Вас зацікавив, надішліть документи нам на Viber: </div>
+                <div class="services-more__title">Щоб дізнатись вартісь розмитнення, автомобіля який Вас зацікавив,
+                    надішліть документи нам на Viber:
+                </div>
                 <div class="services-more__description">1. Технічний паспорт на автомобіль;
-                    2. Умова купівлі продажу або приблизну вартість авто.</div>
+                    2. Умова купівлі продажу або приблизну вартість авто.
+                </div>
                 <div class="services-more__button">Надіслати</div>
             </div>
 
@@ -203,8 +302,9 @@
         <div class="footer__content">
             <div class="footer__content-phone">+38 (067) 635 31 73</div>
             <div class="footer__content-work-schedule">Графік роботи:
-                пн-пт   09:00-18:00
-                сб-нд   вихідний</div>
+                пн-пт 09:00-18:00
+                сб-нд вихідний
+            </div>
         </div>
         <div class="footer__content-socials">
             <p class="footer-content-socials_text">Ми в соц.мережах:</p>
@@ -222,12 +322,21 @@
             <div class="footer-address__img"></div>
             <div class="footer-address__text">м. Вінниця,
                 Хмельницьке
-                шосе 7 км</div>
+                шосе 7 км
+            </div>
         </div>
         <div class="footer__content-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2604.867093796087!2d28.3909576152818!3d49.241008981644065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5d46bdf9aa69%3A0x718a47764a2aadd2!2sMytnyy%20Broker%20Hladkyy%20D.i!5e0!3m2!1sru!2sua!4v1627568270855!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2604.867093796087!2d28.3909576152818!3d49.241008981644065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5d46bdf9aa69%3A0x718a47764a2aadd2!2sMytnyy%20Broker%20Hladkyy%20D.i!5e0!3m2!1sru!2sua!4v1627568270855!5m2!1sru!2sua"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </div>
 </footer>
+
+
+
+<!-- MDB -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- Custom scripts -->
+<script type="text/javascript"></script>
 </body>
 </html>
