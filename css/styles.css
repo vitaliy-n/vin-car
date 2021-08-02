@@ -1,12 +1,11 @@
 .hero {
-    background-image: url(../img/block_background.png);
-    background-size: 150%;
-    background-color: black;
-    background-repeat: no-repeat;
-    background-position: 75% 0;
-    height: 100vh;
+    background-size: 100%;
+    background: black url(../img/block_background.png) no-repeat 75% 0;
+    height: 90vh;
 }
-
+body{
+    overflow-x:hidden
+}
 * {
     margin: 0;
     padding: 0;
@@ -16,9 +15,10 @@
 
 a {
     text-decoration: none;
+    color:white;
 }
 
-.white-color{
+.white-color {
     color: white;
 }
 
@@ -27,37 +27,33 @@ a {
     font-size: calc(1rem + 2vw);
     font-weight: 700;
     letter-spacing: 0.56px;
-    position: relative;
-    left: 10px;
+    padding: 150px 0 0 0;
 
 }
 
-.hero-description {
+.hero .hero-description {
     color: white;
     font-size: calc(1rem + 1vw);
     letter-spacing: 0.28px;
     font-weight: 400;
-    position: relative;
-    left: 10px;
+    width: 60%;
+    padding: 12px 0 15px 0;
 }
 
 .hero-button {
-    position: relative;
     display: flex;
     justify-content: center;
     background: #D24619;
     border-radius: 20px;
-    padding: 8px;
+    padding: 5px;
 
-    width: 35%;
-    top: 230px;
-    left: 10px;
+
 }
 
 .hero-button__link {
     text-decoration: none;
     color: #070707;
-    font-size: 12px;
+    font-size: 19px;
     font-weight: 600;
     letter-spacing: 0.24px;
     min-height: 15px;
@@ -65,19 +61,18 @@ a {
     text-align: center;
 }
 
-.hero-calc {
-    position: relative;
-    top: 250px;
-    left: 15px;
+.hero-calc img {
     width: 75px;
+
 }
 
-.hero-calc-text {
-    position: relative;
-    width: 200px;
-    height: 40%;
-    top: 178px;
-    left: 90px;
+.hero .hero-calc-text {
+    width: 20%;
+    padding: 0 0 0 10px;
+}
+
+.hero__calc {
+    padding: 30px 0 0 0;
 }
 
 .hero-calc-text__link {
@@ -87,139 +82,211 @@ a {
     letter-spacing: 0.02em;
 }
 
-.socials{
+.hero .socials {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
-    width: 35%;
-    position: relative;
-    top: 210px;
-    left: 30px;
+    padding: 20px 0 0 0;
+
+    width: 5%;
 }
-.socials__item{
+
+.socials__item {
     font-size: 22px;
 }
 
 
-@media screen and (max-device-width: 768px) and (min-device-width: 426px) {
-    .hero {
-        height: 70vh;
-        background-size: 174%;
-        background-repeat: no-repeat;
-        background-position: 67% 0;
-    }
-    .hero-title {
-        font-size: calc(1rem + 3vw);
-        left: 10px;
-        top: 200px;
-    }
+.about__title {
+    padding: 40px 0 40px 40px;
+}
 
-    .hero-description {
-        left: 10px;
-        top: 240px;
-        width: 60%;
-        font-size: 28px;
-    }
+.about__title h2 {
+    font-weight: 800;
+    color: #000000;
+}
 
-    .hero-button {
-        width: 35%;
-        top: 320px;
-    }
-
-    .hero-button__link {
-        font-size: 21px;
-    }
-
-    .hero-calc {
-        top: 350px;
-        left: 15px;
-        width: 90px;
-    }
-
-    .hero-calc-text {
-        top: 270px;
-        left: 105px;
-    }
-
-    .socials {
-        left: 450px;
-        top: 340px;
-    }
-    .socials__item{
-        font-size: 50px;
-    }
-
+.about__picture img {
+    width: 90%;
 }
 
 
-@media screen and (max-device-width: 425px) {
-    .hero {
-        background-size: 200%;
-        background-repeat: no-repeat;
-        background-position: 60% 0;
-        height: 80vh;
-    }
+.description-item__img img {
+    width: 40px;
+}
 
-    .hero-title {
-        color: white;
-        font-size: calc(1rem + 1.75vw);
-        letter-spacing: 0.56px;
-        /*position: relative;*/
-        padding-top: 90px;
-        padding-left: 10px;
+.description-item {
+    display: flex;
+    align-items: center;
+}
 
-        /*left: 10px;*/
-    }
+.description-item__text {
+    padding: 5px;
+}
 
-    .hero-description {
-        width: 77%;
-        font-size: calc(1rem + 1vw);
-        position: relative;
-        left: 10px;
-        top: 60px;
-    }
+.calc {
+    padding: 50px 0 0 0;
+    background: url(../img/calculator_background.svg) no-repeat 0 5%;
+    background-size: 120%;
+    height: 90vh;
 
-    .hero-button {
+}
 
-        width: 40%;
-        top: 120px;
-        left: 10px;
-    }
+.calc__title h2 {
+    font-weight: bold;
+}
 
-    .hero-button__link {
-        font-size: 12px;
-        font-weight: 600;
-        letter-spacing: 0.24px;
-    }
+.calc__description h3 {
+    font-weight: bold;
+}
 
-    .hero-calc {
-        position: relative;
-        top: 150px;
-        left: 0;
-        width: 75px;
-    }
+.calc__calculator{
+    align-items: center;
+    padding: 40px 0 0 0 ;
+}
 
-    .hero-calc-text {
-        width: 200px;
-        height: 40%;
-        top: 78px;
-        left: 85px;
-    }
+.calc .calculator-item:nth-child(4){
+    padding: 24px 0 0 0;
+}
+.calculator-item__text{
+    color: white;
+}
 
-    .hero-calc-text__link {
-        font-weight: 500;
-        line-height: 17px;
-        letter-spacing: 0.02em;
-    }
+.payments-item__text{
+    color: white;
+}
 
-    .socials{
-        width: 35%;
-        top: 110px;
-        left: 30px;
-    }
+.payments__text h3{
+    padding: 20px 0 0 0;
+    color: white;
+    font-weight: bold;
+}
+.total__text{
+    color: white;
+}
+.payments-item__value{
+    color: white;
+}
+.customs-payments__total{
+    padding: 30px 0 0 0 ;
+}
 
-    .socials__item{
-        font-size: 22px;
-    }
+.customs-payments__total .total__value{
+    margin: -25px  0 0 90%;
+    color: white;
+}
+
+.services__title{
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+.services__title h2{
+    color: #D24619;
+    font-weight: 800;
+}
+.services__item {
+    margin: 5px;
+    padding: 5px;
+}
+
+.services-item__title{
+    font-weight: 600;
+}
+
+.services .services__item{
+    margin: 5px;
+    padding: 5px;
+}
+.services-more__title{
+    font-weight: 600;
+    font-size: calc(1em + 1.5vm);
+}
+/*.services__more .services-button__more{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
+.services__more .services-button__more{
+    font-size: calc(0.6em + 0.75vw);
+    border-radius: 30px;
+    background-color: #D24619;
+    margin: 0 30% 0 30%;
+    text-align: center;
+    padding: 3px;
+}
+.services-button__more a{
+    font-weight: bold;
+    color: black;
+}
+
+.catalog {
+    background: url("../img/catalog_background.png") no-repeat center;
+    height: 100vh;
+    background-size: cover;
+}
+.catalog h2{
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    color: black;
+}
+
+.catalog__content{
+    height: 80vh;
+}
+.catalog__questions{
+    text-align: center;
+}
+.catalog-questions__text h3{
+    font-weight: bold;
+    color:black;
+}
+.catalog-questions__button{
+    background-color: black;
+    margin: 0 35% 0 35%;
+    color: white;
+    border-radius: 30px;
+}
+
+.catalog-questions__button a{
+    color: white;
+    text-decoration: none;
+}
+
+.reviews {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(249, 212, 200, 0.28) 0%, rgba(210, 70, 25, 0) 100%);
+    height: 60vh;
+}
+.reviews .title{
+    text-align: center;
+}
+.reviews .title h2{
+    color: black;
+    font-weight: 700;
+}
+
+.footer{
+    background-color: #010415;
+    color: white;
+}
+.footer__menu-link{
+    color: white;
+}
+.footer__logo .navbar-brand{
+    display: flex;
+    justify-content: center;
+}
+
+.footer__content-map iframe{
+    width: 100%;
+    height: 50%;
+}
+
+.footer .header_socials{
+    display: flex;
+    justify-content: center;
+}
+
+.footer .header_socials .social_media{
+    font-size: calc(1em + 2vw);
 }
 
 
