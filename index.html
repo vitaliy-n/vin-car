@@ -1,452 +1,629 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/styles.css">
-    <!--    font awesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"/>
-    <!-- MDB -->
-    <link rel="stylesheet" href="./css/mdb.min.css"/>
-
-    <title>Vin Car</title>
-</head>
-<body>
-<header class="header">
-    <nav class="header__top navbar sticky-top  navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img
-                        src="img/logo.svg"
-                        height="50"
-                        alt="logo"
-                        loading="lazy"
-                />
-            </a>
-            <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-mdb-toggle="collapse"
-                    data-mdb-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-            >
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto ">
-                    <li class="nav-item ">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport"
+         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="css/styles.css">
+      <!--    font awesome-->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"/>
+      <!-- MDB -->
+      <link rel="stylesheet" href="./css/mdb.min.css"/>
+      <link rel="stylesheet" type="text/css" href="css/demo.css"/>
+      <link rel="stylesheet" type="text/css" href="css/slicebox.css"/>
+      <link rel="stylesheet" type="text/css" href="css/custom.css"/>
+      <script type="text/javascript" src="js/modernizr.custom.46884.js"></script>
+      <title>Vin Car</title>
+   </head>
+   <body>
+      <header class="header">
+         <nav class="header__top navbar  navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+               <a class="navbar-brand" href="#">
+               <img
+                  src="img/logo.svg"
+                  height="50"
+                  alt="logo"
+                  loading="lazy"
+                  />
+               </a>
+               <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-mdb-toggle="collapse"
+                  data-mdb-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                  >
+               <i class="fas fa-bars"></i>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-auto ">
+                     <li class="nav-item ">
                         <a class="nav-link" href="#about_us">Про нас</a>
-                    </li>
-                    <li class="nav-item">
+                     </li>
+                     <li class="nav-item">
                         <a class="nav-link" href="#calc">Калькулятор</a>
-                    </li>
-                    <li class="nav-item">
+                     </li>
+                     <li class="nav-item">
                         <a class="nav-link" href="#services">Послуги</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#catslog">Каталог</a>
-                    </li>
-                    <li class="nav-item">
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#catalog">Каталог</a>
+                     </li>
+                     <li class="nav-item">
                         <a class="nav-link" href="#reviews">Відгуки</a>
-                    </li>
-                    <li class="nav-item">
+                     </li>
+                     <li class="nav-item">
                         <a class="nav-link" href="#contacts">Контакти</a>
-                    </li>
-                </ul>
-                <div class="header_socials">
-                    <a href="https://www.instagram.com/broker_vinnytsia/" class="social_media">
-                        <i class="fab fa-instagram text-white"></i>
-                    </a>
-                    <a href="https://www.facebook.com/autovincar" class="social_media">
-                        <i class="fab fa-facebook text-white"></i>
-                    </a>
-                    <a href="https://invite.viber.com/?g2=AQBFvm29Lbz0ZkkQ2SsjvcMGZGeSfZ%2BnnS50OK6OhEEjzhsQgXCqZ56Mdp0Gtta5&lang=uk" class="social_media">
-                        <i class="fab fa-viber text-white"></i>
-                    </a>
-                    <a href="https://invite.viber.com/?g2=AQBFvm29Lbz0ZkkQ2SsjvcMGZGeSfZ%2BnnS50OK6OhEEjzhsQgXCqZ56Mdp0Gtta5&lang=uk" class="social_media">
-                        <i class="fab fa-whatsapp text-white"></i>
-                    </a>
-                </div>
+                     </li>
+                  </ul>
+                  <div class="header_socials">
+                     <a href="https://www.instagram.com/broker_vinnytsia/" target="_blank" class="social_media">
+                     <i class="fab fa-instagram text-white"></i>
+                     </a>
+                     <a href="https://www.facebook.com/autovincar" target="_blank" class="social_media">
+                     <i class="fab fa-facebook text-white"></i>
+                     </a>
+                     <a href="https://invite.viber.com/?g2=AQBFvm29Lbz0ZkkQ2SsjvcMGZGeSfZ%2BnnS50OK6OhEEjzhsQgXCqZ56Mdp0Gtta5&lang=uk"
+                        target="_blank" class="social_media">
+                     <i class="fab fa-viber text-white"></i>
+                     </a>
+                     <a href="https://api.whatsapp.com/qr/O3NONZLUAZXCK1" target="_blank" class="social_media">
+                     <i class="fab fa-whatsapp text-white"></i>
+                     </a>
+                  </div>
+               </div>
             </div>
-        </div>
-    </nav>
-</header>
-
-<section class="hero">
-    <div class="container p-5">
-        <h1 class="hero-title row">АВТО З ЄВРОПИ</h1>
-        <p class="hero-description row">Підбір, пригін, розмитнення та безкоштовна консультація</p>
-        <div class="col-md-5 hero-button row">
-            <a class="hero-button__link" href="https://invite.viber.com/?g2=AQBFvm29Lbz0ZkkQ2SsjvcMGZGeSfZ%2BnnS50OK6OhEEjzhsQgXCqZ56Mdp0Gtta5&lang=uk">Прорахувати авто</a></div>
-        <div class="hero__calc row">
-            <a class="hero-calc col-lg-1" href="#calc"><img class="" src="img/icon_calc.svg" alt="calc_img"></a>
-            <div class="hero-calc-text">
-                <a class="hero-calc-text__link" href="#calc">Калькулятор розмитнення “євроблях”</a>
+         </nav>
+      </header>
+      <section class="hero">
+         <div class="container p-5">
+            <h1 class="hero-title row">АВТО З ЄВРОПИ</h1>
+            <p class="hero-description row">Підбір, пригін, розмитнення та безкоштовна консультація</p>
+            <div class="col-md-5 hero-button row">
+               <a class="hero-button__link" href="viber://chat/?number=%2B380676353173">Прорахувати авто</a>
             </div>
-        </div>
-        <div class="socials row">
-            <div class="socials__instagram ">
-                <a href="https://www.instagram.com/broker_vinnytsia/">
-                    <i class="fab fa-instagram socials__item white-color"></i>
-                </a>
+            <div class="hero__calc">
+               <a class="hero-calc" href="#calc"><img class="" src="img/icon_calc.svg" alt="calc_img"></a>
+               <div class="hero-calc-text">
+                  <a class="hero-calc-text__link" href="#calc">Калькулятор розмитнення “євроблях”</a>
+               </div>
             </div>
-            <div class="socials__facebook ">
-                <a href="https://www.facebook.com/autovincar">
-                    <i class="fab fa-facebook socials__item white-color"></i>
-                </a>
+            <div class="socials row">
+               <div class="socials__instagram ">
+                  <a href="https://www.instagram.com/broker_vinnytsia/" target="_blank">
+                  <i class="fab fa-instagram socials__item white-color"></i>
+                  </a>
+               </div>
+               <div class="socials__facebook ">
+                  <a href="https://www.facebook.com/autovincar" target="_blank">
+                  <i class="fab fa-facebook socials__item white-color"></i>
+                  </a>
+               </div>
+               <div class="socials__viber ">
+                  <a href="https://invite.viber.com/?g2=AQBFvm29Lbz0ZkkQ2SsjvcMGZGeSfZ%2BnnS50OK6OhEEjzhsQgXCqZ56Mdp0Gtta5&lang=uk"
+                     target="_blank">
+                  <i class="fab fa-viber socials__item white-color"></i>
+                  </a>
+               </div>
+               <div class="socials__whatsapp ">
+                  <a href="https://api.whatsapp.com/qr/O3NONZLUAZXCK1" target="_blank">
+                  <i class="fab fa-whatsapp socials__item white-color"></i>
+                  </a>
+               </div>
             </div>
-            <div class="socials__viber ">
-                <a href="https://invite.viber.com/?g2=AQBFvm29Lbz0ZkkQ2SsjvcMGZGeSfZ%2BnnS50OK6OhEEjzhsQgXCqZ56Mdp0Gtta5&lang=uk">
-                    <i class="fab fa-viber socials__item white-color"></i>
-                </a>
+         </div>
+      </section>
+      <section class="about" id="about_us">
+         <div class="container">
+            <div class="about__title row">
+               <h2 class="col-md-8 offset-md-4 text-center">Чому варто обрати VIN CAR?</h2>
             </div>
-            <div class="socials__whatsapp ">
-                <a href="https://invite.viber.com/?g2=AQBFvm29Lbz0ZkkQ2SsjvcMGZGeSfZ%2BnnS50OK6OhEEjzhsQgXCqZ56Mdp0Gtta5&lang=uk">
-                    <i class="fab fa-whatsapp socials__item white-color"></i>
-                </a>
-            </div>
-        </div>
-
-    </div>
-</section>
-<section class="about" id="about_us">
-    <div class="container">
-        <div class="about__title row">
-            <h2 class="col-md-8 offset-md-4">Чому варто обрати VIN CAR?</h2>
-        </div>
-        <div class="about__content row">
-            <div class="about__picture col-md-6">
-                <img src="img/about_section_lafaet.svg" alt="car">
-            </div>
-            <div class="about__description col-md-6">
-                <div class="description-item row">
-                    <div class="description-item__img col-1">
+            <div class="about__content row">
+               <div class="about__picture col-md-6">
+                  <img src="img/about_section_lafaet.svg" alt="car">
+               </div>
+               <div class="about__description col-md-6">
+                  <div class="description-item row">
+                     <div class="description-item__img col-1">
                         <img src="img/checked.svg" alt="vin car">
-                    </div>
-                    <div class="description-item__text col-10 offset-1">Наша команда “VIN CAR” успішно працює з 2018
+                     </div>
+                     <div class="description-item__text col-10 offset-1">Наша команда “VIN CAR” успішно працює з 2018
                         року в місті
                         Вінниця та інших містах України.
-                    </div>
-                </div>
-                <div class="description-item row">
-                    <div class="description-item__img col-1">
+                     </div>
+                  </div>
+                  <div class="description-item row">
+                     <div class="description-item__img col-1">
                         <img src="img/checked.svg" alt="vin car">
-                    </div>
-                    <div class="description-item__text col-10 offset-1">За цей час ми розмитнили близько 2000 авто.
-                    </div>
-                </div>
-                <div class="description-item row">
-                    <div class="description-item__img col-1">
+                     </div>
+                     <div class="description-item__text col-10 offset-1">За цей час ми розмитнили близько 2000 авто.
+                     </div>
+                  </div>
+                  <div class="description-item row">
+                     <div class="description-item__img col-1">
                         <img src="img/checked.svg" alt="vin car">
-                    </div>
-                    <div class="description-item__text col-10 offset-1">У відділі працюють фахівці з колосальним
+                     </div>
+                     <div class="description-item__text col-10 offset-1">У відділі працюють фахівці з колосальним
                         досвідом та навичками,
                         які допомагають вибирати та викуповувати кращі авто, та розмитнити без завищення митних
                         платежів.
-                    </div>
-                </div>
-                <div class="description-item row">
-                    <div class="description-item__img col-1">
+                     </div>
+                  </div>
+                  <div class="description-item row">
+                     <div class="description-item__img col-1">
                         <img src="img/checked.svg" alt="vin car">
-                    </div>
-                    <div class="description-item__text col-10 offset-1">70% задоволених клієнтів стали постійними. Це ще
+                     </div>
+                     <div class="description-item__text col-10 offset-1">70% задоволених клієнтів стали постійними. Це ще
                         раз
                         підтверджує, що співпраця з нами, вас не розчарує!
-                    </div>
-                </div>
-                <div class="description-item row">
-                    <div class="description-item__img col-1">
+                     </div>
+                  </div>
+                  <div class="description-item row">
+                     <div class="description-item__img col-1">
                         <img src="img/checked.svg" alt="vin car">
-                    </div>
-                    <div class="description-item__text col-10 offset-1">Для постійних клієнтів дійсні спец.пропозиції.
-                    </div>
-                </div>
+                     </div>
+                     <div class="description-item__text col-10 offset-1">Для постійних клієнтів дійсні спец.пропозиції.
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-</section>
-<section class="calc mt-4" id="calc">
-    <div class="container p-4">
-        <div class="calc__title row">
-            <h2>Калькулятор розмитнення “євроблях”</h2>
-        </div>
-        <div class="calc__description">
-            <h3>по з/п №3704-Д і 4643-Д</h3>
-        </div>
-        <div class="calc__content row">
-            <div class="calc__calculator col-md-12 col-6">
-                <div class="row">
-                    <div class="calculator-item col-md">
+         </div>
+      </section>
+      <section class="calc mt-4" id="calc">
+         <div class="container p-4">
+            <div class="calc__title row">
+               <h2>Калькулятор розмитнення “євроблях”</h2>
+            </div>
+            <div class="calc__description">
+               <h3>по з/п №3704-Д і 4643-Д</h3>
+            </div>
+            <div class="calc__content row">
+               <div class="calc__calculator col-md-12 text-center text-md-start">
+                  <div class="row ">
+                     <div class="calculator-item col-md col-6 ">
                         <div class="calculator-item__text">Рік автомобіля</div>
                         <label>
-                            <input type="text" class="calculator-item__input form-control">
+                            <input class="calculator-item__input form-control" id="manufactured_year" type="number" min="1900" max="2030" step="1" value="2016" />
                         </label>
-                    </div>
-                    <div class="calculator-item col-md">
+                     </div>
+                     <div class="calculator-item col-md col-6 ">
                         <div class="calculator-item__text">Об'єм двигуна, см3</div>
                         <div class="calculator-item__input">
-                            <label>
-                                <input type="text" class="calculator-item__input form-control">
-                            </label>
+                           <label>
+                           <input type="number" id="engine_capacity" class="calculator-item__input form-control"  min="100" max="20000" step="100" value="2000">
+                           </label>
                         </div>
-                    </div>
-                    <div class="calculator-item col-md">
+                     </div>
+                     <div class="calculator-item col-md col-6 mt-md-0 mt-3">
                         <div class="calculator-item__text">Тип двигуна</div>
                         <div class="calculator-item__input">
-                            <label>
-                                <input type="text" class="calculator-item__input form-control">
-                            </label>
+                           <label>
+                           <select id="engine_type" class="calculator-item__input form-control">
+                                <option value="1">Дизель</option>
+                                <option value="2">Бензин</option>
+                            </select>
+                           </label>
                         </div>
-                    </div>
-                    <div class="calculator-item col-md">
-                        <div class="calculator-item__button btn btn-danger m-3 m-md-0">РОЗРАХУВАТИ</div>
-                    </div>
-                </div>
-            </div>
-            <div class="customs-payments  col-md-12 col-6">
-                <div class="customs-payments__content">
-                    <div class="payments__text row">
-                        <h3>Митні платежі</h3>
-                    </div>
-                    <div class="payments-items">
-                        <div class="payments__item row">
-                            <div class="payments-item__text col-md-4">Ставка за вік</div>
-                            <div class="payments-item__value offset-9">0</div>
-                        </div>
-                        <div class="payments__item row">
-                            <div class="payments-item__text col-md-4">Ставка за об'єм двигуна</div>
-                            <div class="payments-item__value offset-9">0</div>
-                        </div>
-                        <div class="payments__item row">
-                            <div class="payments-item__text col-md-4">Ставка за тип палива</div>
-                            <div class="payments-item__value offset-9">0</div>
-                        </div>
-                        <div class="payments__item row">
-                            <div class="payments-item__text col-md-4">Добровільний внесок</div>
-                            <div class="payments-item__value offset-9">0</div>
-                        </div>
-                        <div class="payments__item row">
-                            <div class="payments-item__text col-md-4">ПДВ</div>
-                            <div class="payments-item__value offset-9">0</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="customs-payments__total row">
-                    <div class="total__text  col-md-4">РАЗОМ:</div>
-                    <div class="total__value  offset-8">0</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="services" id="services">
-    <div class="container">
-        <div class="services__title row ">
-            <h2>Послуги VIN CAR</h2>
-        </div>
+                     </div>
+                     <div class="calculator-item col-md col-6 mt-md-0 mt-3">
+                        <div class="calculator-item__button btn btn-danger " onclick="calc()">РОЗРАХУВАТИ</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="customs-payments  col-md-12 mt-3 ">
+                  <div class="customs-payments__content">
+                     <table>
+                        <thead>
+                           <tr>
+                              <td><h4>Митні платежі</h4></td>
+                              <td><h4>EUR</h4></td>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>Ставка за вік, EUR</td>
+                               <td id="car_age_rate">0</td>
+                           </tr>
+                           <tr>
+                              <td>Ставка за об'єм двигуна, EUR</td>
+                               <td id="engine_capacity_rate">0</td>
+                           </tr>
+                           <tr>
+                              <td>Тип двигуна, EUR</td>
+                              <td id="engine_type_rate">0</td>
+                           </tr>
+                           <tr>
+                              <td>ПДВ, EUR</td>
+                              <td id='pdv'>0</td>
+                           </tr>
+                           <tr>
+                              <td>Добровільний внесок, EUR</td>
+                              <td id="free_payment"> ≈270 </td>
+                           </tr>
+                           <tr>
+                              <td><h5>Разом:</h5></td>
+                              <td><h4 id="total">0</h4></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
 
-        <div class="services__content container p-2">
-            <div class="row">
-                <div class="services__item col-12 col-md pt-4">
-                    <div class="row">
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="services" id="services">
+         <div class="container">
+            <div class="services__title row ">
+               <h2>Послуги VIN CAR</h2>
+            </div>
+            <div class="services__content container p-2">
+               <div class="row">
+                  <div class="services__item col-12 col-md pt-md-4">
+                     <div class="row">
                         <div class="services-item__img-1 col-1 figure-img"><img src="img/icons_search.svg"
-                                                                                alt="vin car"></div>
+                           alt="vin car"></div>
                         <h4 class="services-item__title offset-1 col">Персональний підбір та пригін</h4>
-                    </div>
-                    <div class="row">
-                        <div class="services-item__text row">Відповідно до Ваших побажань і матеріальних можливостей,
-                            наші
-                            фахівці виконують пошук, підбір, перевірку, викуп та пригін найоптимальнішого варіанту авто.
-                            <br>
-                            Також ми беремо на себе повну відповідальність за пригін Вашого автомобіля.
+                     </div>
+                     <div class="row">
+                        <div class="services-item__text row"style="margin-left: 0px;">Відповідно до Ваших побажань і матеріальних можливостей,
+                           наші
+                           фахівці виконують пошук, підбір, перевірку, викуп та пригін найоптимальнішого варіанту авто.
+                           <br>
+                           Також ми беремо на себе повну відповідальність за пригін Вашого автомобіля.
                         </div>
-                    </div>
-                </div>
-
-                <div class="services__item col-12 col-md">
-                    <div class="row">
+                     </div>
+                  </div>
+                  <div class="services__item col-12 col-md">
+                     <div class="row">
                         <div class="services-item__img-2 col-1 figure-img">
-                            <img src="img/icons_document.svg" alt="vin car">
+                           <img src="img/icons_document.svg" alt="vin car">
                         </div>
                         <h4 class="services-item__title offset-1 col">Митно-брокерські послуги</h4>
-                    </div>
-                    <div class="row">
+                     </div>
+                     <div class="row">
                         <div class="services-item__text">
-                            - Декларування та розмитнення транспортних засобів без
-                            завищення
-                            митних платежів;<br>
-                            - Подання попередньої декларації (ПД);<br>
-                            - Розмитнення «Євроблях» без завищення митних платежів;<br>
-                            - Зняття з обліку в країнах реєстрації;<br>
-                            - Розрахунок митних платежів. <br>
+                           - Декларування та розмитнення транспортних засобів без
+                           завищення
+                           митних платежів;<br>
+                           - Подання попередньої декларації (ПД);<br>
+                           - Розмитнення «Євроблях» без завищення митних платежів;<br>
+                           - Зняття з обліку в країнах реєстрації;<br>
+                           - Розрахунок митних платежів. <br>
                         </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row">
-                <div class="services__item col-12 col-md pt-4">
-                    <div class="row">
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="services__item col-12 col-md pt-md-4">
+                     <div class="row">
                         <div class="services-item__img-3 col-1 figure-img">
-                            <img src="img/icons_helping_hand.svg" alt="vin car">
+                           <img src="img/icons_helping_hand.svg" alt="vin car">
                         </div>
                         <h4 class="services-item__title offset-1 col">Повний супровід</h4>
-                    </div>
-                    <div class="row">
+                     </div>
+                     <div class="row">
                         <div class="services-item__text">Для тих, хто вперше бажає самостійно пригнати автомобіль з
-                            країн
-                            Євросоюзу, ми з радістю проконсультуємо, здійснемо калькуляцію очікуваних витрат, надамо
-                            постійну підтримку протягом процесу та покрокову інструкцію.
+                           країн
+                           Євросоюзу, ми з радістю проконсультуємо, здійснемо калькуляцію очікуваних витрат, надамо
+                           постійну підтримку протягом процесу та покрокову інструкцію.
                         </div>
-                    </div>
-                </div>
-                <div class="services__item col-12 col-md">
-                    <div class="row">
+                     </div>
+                  </div>
+                  <div class="services__item col-12 col-md">
+                     <div class="row">
                         <div class="services-item__img-4 col-1 figure-img">
-                            <img src="img/icons_inquiry.svg" alt="vin car">
+                           <img src="img/icons_inquiry.svg" alt="vin car">
                         </div>
                         <h4 class="services-item__title offset-1 col">Cертифікації та постановка на облік</h4>
-                    </div>
-                    <div class="row">
+                     </div>
+                     <div class="row">
                         <div class="services-item__text">Ви можете зареєструвати автомобіль в Сервісному центрі
-                            самостійно,
-                            а перед тим пройти сертифікацію, але чи потрібно це Вам? Коли наша команда залюбки допоможе
-                            в
-                            цьому і збереже Ваш час.
+                           самостійно,
+                           а перед тим пройти сертифікацію, але чи потрібно це Вам? Коли наша команда залюбки допоможе
+                           в
+                           цьому і збереже Ваш час.
                         </div>
-                    </div>
-                </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-
-        </div>
-        <div class="services__more container">
-            <div class="services-more__title text-center mt-4 mb-4 row justify-content-center">Щоб дізнатись вартісь
-                розмитнення,
-                автомобіля який Вас зацікавив,
-                надішліть документи нам на Viber:
+            <div class="services__more container">
+               <div class="services-more__title text-center mt-4 mb-4 row justify-content-center">Щоб дізнатись вартісь
+                  розмитнення,
+                  автомобіля який Вас зацікавив,
+                  надішліть документи нам на Viber:
+               </div>
+               <div class="services-more__description  text-center mt-4 mb-4 row justify-content-center">1. Технічний
+                  паспорт на
+                  автомобіль; <br>
+                  2. Умова купівлі продажу або приблизну вартість авто.
+               </div>
+               <div class="services-button__more row mt-5 mb-5">
+                  <a href="viber://chat/?number=%2B380676353173" class="services-button__link">НАДІСЛАТИ</a>
+               </div>
             </div>
-            <div class="services-more__description  text-center mt-4 mb-4 row justify-content-center">1. Технічний
-                паспорт на
-                автомобіль; <br>
-                2. Умова купівлі продажу або приблизну вартість авто.
-            </div>
-            <div class="services-button__more row mt-5 mb-5">
-                <a href="https://invite.viber.com/?g2=AQBFvm29Lbz0ZkkQ2SsjvcMGZGeSfZ%2BnnS50OK6OhEEjzhsQgXCqZ56Mdp0Gtta5&lang=uk" class="services-button__link">НАДІСЛАТИ</a>
-            </div>
-
-        </div>
-    </div>
-    </div>
-</section>
-<section class="catalog" id="catalog">
-    <div class="container pb-4">
-        <div class="title pt-4">
+         </div>
+         </div>
+      </section>
+      <section class="catalog" id="catalog">
+         <div class="container pb-4">
+         <div class="title pt-4 pb-3">
             <h2>Каталог авто</h2>
-        </div>
-        <div class="catalog__content">
-
-        </div>
-
-        <div class="catalog__questions ">
+         </div>
+         <div class="catalog__content">
+         <div id="carouselExampleControls" class="carousel slide" data-mdb-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <a href="https://www.instagram.com/p/CRli1M3tmKU/">
+                  <img
+                     src="img/catalog.jpg"
+                     class="d-block w-100"
+                     alt="auto vin car catalog"
+                     />
+                  </a>
+               </div>
+               <div class="carousel-item">
+                  <a href="https://www.instagram.com/p/CRAB_gINKac/">
+                  <img
+                     src="img/catalog2.jpg"
+                     class="d-block w-100"
+                     alt="auto vin car catalog"
+                     />
+                  </a>
+               </div>
+               <div class="carousel-item">
+                  <a href="https://www.instagram.com/p/CRAB8B6NpqZ/">
+                  <img
+                     src="img/catalog3.jpg"
+                     class="d-block w-100"
+                     alt="auto vin car catalog"
+                     />
+                  </a>
+               </div>
+               <div class="carousel-item">
+                  <a href="https://www.instagram.com/p/CRAB3SCNDud/">
+                  <img
+                     src="img/catalog4.jpg"
+                     class="d-block w-100"
+                     alt="auto vin car catalog"
+                     />
+                  </a>
+               </div>
+               <div class="carousel-item">
+                  <a href="https://www.instagram.com/p/CRAB0kqNJIA/">
+                  <img
+                     src="img/catalog5.jpg"
+                     class="d-block w-100"
+                     alt="auto vin car catalog"
+                     />
+                  </a>
+               </div>
+               <div class="carousel-item">
+                  <a href="https://www.instagram.com/p/CRABwjJNk4B/">
+                  <img
+                     src="img/catalog6.jpg"
+                     class="d-block w-100"
+                     alt="auto vin car catalog"
+                     />
+                  </a>
+               </div>
+               <div class="carousel-item">
+                  <a href="https://www.instagram.com/p/CRABtaYNSIq/">
+                  <img
+                     src="img/catalog7.jpg"
+                     class="d-block w-100"
+                     alt="auto vin car catalog"
+                     />
+                  </a>
+               </div>
+               <div class="carousel-item">
+                  <a href="https://www.instagram.com/p/CQik2gfNNT6/">
+                  <img
+                     src="img/catalog8.jpg"
+                     class="d-block w-100"
+                     alt="auto vin car catalog"
+                     />
+                  </a>
+               </div>
+            </div>
+            <button
+               class="carousel-control-prev"
+               type="button"
+               data-mdb-target="#carouselExampleControls"
+               data-mdb-slide="prev"
+               >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+               class="carousel-control-next"
+               type="button"
+               data-mdb-target="#carouselExampleControls"
+               data-mdb-slide="next"
+               >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+         </div>
+         <div class="catalog__questions ">
             <div class="catalog-questions__text mb-3 mt-3">
-                <h3>
-                    З'явилися питання?
-                </h3>
+               <h3>
+                  З'явилися питання?
+               </h3>
             </div>
             <div class="catalog-questions__button">
-                <a href="tel:+380676353173">+38 (067) 635 31 73</a>
+               <a href="tel:+380676353173">+38 (067) 635 31 73</a>
             </div>
-        </div>
-    </div>
-</section>
-<section class="reviews" id="reviews">
-    <div class="container">
-        <div class="title pt-4">
+         </div>
+      </section>
+      <section class="reviews justify-content-center" id="reviews">
+         <div class="title pt-4">
             <h2>Відгуки</h2>
-        </div>
-    </div>
-</section>
-<footer class="footer" id="contacts">
-    <div class="container">
-        <div class="footer__menu p-4 row justify-content-center">
-            <a href="#about_us" class="footer__menu-link col">Про нас</a>
-            <a href="#calc" class="footer__menu-link col">Калькулятор</a>
-            <a href="#services" class="footer__menu-link col">Послуги</a>
-            <a href="#catalog" class="footer__menu-link col">Каталог</a>
-            <a href="#reviews" class="footer__menu-link col">Відгуки</a>
-            <a href="#contacts" class="footer__menu-link col">Контакти</a>
-        </div>
-        <div class="footer__logo row justify-content-center">
-            <a class="navbar-brand" href="#">
-                <img
-                        src="img/logo.svg"
-                        height="50"
-                        alt="logo"
-                        loading="lazy"
-                />
-            </a>
-        </div>
-        <div class="footer__content-socials justify-content-center">
-            <p class="footer-content-socials_text row justify-content-center">
-                Ми в соц.мережах:
-            </p>
-            <div class="header_socials">
-                <a href="https://www.instagram.com/broker_vinnytsia/" class="social_media">
-                    <i class="fab fa-instagram text-white"></i>
-                </a>
-                <a href="https://www.facebook.com/autovincar" class="social_media">
-                    <i class="fab fa-facebook text-white"></i>
-                </a>
-                <a href="https://invite.viber.com/?g2=AQBFvm29Lbz0ZkkQ2SsjvcMGZGeSfZ%2BnnS50OK6OhEEjzhsQgXCqZ56Mdp0Gtta5&lang=uk" class="social_media">
-                    <i class="fab fa-viber text-white"></i>
-                </a>
-                <a href="https://invite.viber.com/?g2=AQBFvm29Lbz0ZkkQ2SsjvcMGZGeSfZ%2BnnS50OK6OhEEjzhsQgXCqZ56Mdp0Gtta5&lang=uk" class="social_media">
-                    <i class="fab fa-whatsapp text-white"></i>
-                </a>
+         </div>
+         <div class="container">
+            <div class="wrapper">
+               <ul id="sb-slider" class="sb-slider">
+                  <li>
+                     <a target="_blank"><img src="img/1.png" alt="image1"/></a>
+                  </li>
+                  <li>
+                     <a target="_blank"><img src="img/2.png" alt="image2"/></a>
+                  </li>
+                  <li>
+                     <a target="_blank"><img src="img/3.png" alt="image1"/></a>
+                  </li>
+                  <li>
+                     <a target="_blank"><img src="img/4.png" alt="image1"/></a>
+                  </li>
+                  <li>
+                     <a target="_blank"><img src="img/5.png" alt="image1"/></a>
+                  </li>
+                  <li>
+                     <a target="_blank"><img src="img/6.png" alt="image1"/></a>
+                  </li>
+                  <li>
+                     <a target="_blank"><img src="img/7.png" alt="image1"/></a>
+                  </li>
+               </ul>
+               <div id="shadow" class="shadow" hidden></div>
+               <div id="nav-arrows" class="nav-arrows">
+                  <a href="#">
+                  </a>
+                  <a href="#">prev
+                  </a>
+               </div>
             </div>
-
-        </div>
-
-
-        <div class="row justify-content-center">
-            <div class="footer__content col m-4">
-                <a href="tel:+380676353173" class="footer__content-phone row mb-3 justify-content-center">
-<!--                    <a href="tel:+380676353173">-->
-                    +38 (067) 635 31 73
-<!--                    </a>-->
-                </a>
-                <div class="footer__content-work-schedule row justify-content-center">Графік роботи: <br>
-                    пн-пт 09:00-18:00 <br>
-                    сб-нд вихідний
-                </div>
-                <a href="mailto:broker.vincar@gmail.com" class="footer__email row mt-4 m-3 justify-content-center">broker.vincar@gmail.com</a>
+            <!-- /wrapper -->
+         </div>
+         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+         <script type="text/javascript" src="js/jquery.slicebox.js"></script>
+         <script type="text/javascript">
+            $(function () {
+            
+                var Page = (function () {
+            
+                    var $navArrows = $('#nav-arrows').hide(),
+                    $shadow = $('#shadow').hide(),
+                    slicebox = $('#sb-slider').slicebox({
+                        onReady: function () {
+            
+                            $navArrows.show();
+                            $shadow.show();
+            
+                        },
+                        orientation: 'r',
+                        cuboidsRandom: true
+                    }),
+            
+                    init = function () {
+            
+                        initEvents();
+            
+                    },
+                    initEvents = function () {
+            
+                            // add navigation events
+                            $navArrows.children(':first').on('click', function () {
+                                slicebox.next();
+                                return false;
+            
+                            });
+            
+                            $navArrows.children(':last').on('click', function () {
+                                slicebox.previous();
+                                return false;
+            
+                            });
+            
+                        };
+            
+                        return {init: init};
+            
+                    })();
+            
+                    Page.init();
+            
+                });
+         </script>
+      </section>
+      <footer class="footer" id="contacts">
+         <div class="container">
+            <div class="footer__menu p-4 row justify-content-center">
+               <a href="#about_us" class="footer__menu-link col">Про нас</a>
+               <a href="#calc" class="footer__menu-link col">Калькулятор</a>
+               <a href="#services" class="footer__menu-link col">Послуги</a>
+               <a href="#catalog" class="footer__menu-link col">Каталог</a>
+               <a href="#reviews" class="footer__menu-link col">Відгуки</a>
+               <a href="#contacts" class="footer__menu-link col">Контакти</a>
             </div>
-            <div class="col m-4">
-                <div class="footer__content-address">
-                    <div class="footer-address__img"></div>
-                    <div class="footer-address__text">м. Вінниця,
+            <div class="footer__logo row justify-content-center">
+               <a class="navbar-brand" href="#">
+               <img
+                  src="img/logo.svg"
+                  height="50"
+                  alt="logo"
+                  loading="lazy"
+                  />
+               </a>
+            </div>
+            <div class="footer__content-socials justify-content-center">
+               <p class="footer-content-socials_text row justify-content-center">
+                  Ми в соц.мережах:
+               </p>
+               <div class="header_socials">
+                  <a href="https://www.instagram.com/broker_vinnytsia/" target="_blank" class="social_media">
+                  <i class="fab fa-instagram text-white"></i>
+                  </a>
+                  <a href="https://www.facebook.com/autovincar" target="_blank" class="social_media">
+                  <i class="fab fa-facebook text-white"></i>
+                  </a>
+                  <a href="https://invite.viber.com/?g2=AQBFvm29Lbz0ZkkQ2SsjvcMGZGeSfZ%2BnnS50OK6OhEEjzhsQgXCqZ56Mdp0Gtta5&lang=uk"
+                     target="_blank" class="social_media">
+                  <i class="fab fa-viber text-white"></i>
+                  </a>
+                  <a href="https://api.whatsapp.com/qr/O3NONZLUAZXCK1" target="_blank" class="social_media">
+                  <i class="fab fa-whatsapp text-white"></i>
+                  </a>
+               </div>
+            </div>
+            <div class="row justify-content-center">
+               <div class="footer__content col m-4">
+                  <a href="tel:+380676353173" class="footer__content-phone row mb-3 justify-content-center">
+                     <!--                    <a href="tel:+380676353173">-->
+                     +38 (067) 635 31 73
+                     <!--                    </a>-->
+                  </a>
+                  <div class="footer__content-work-schedule row justify-content-center">Графік роботи: <br>
+                     пн-пт 09:00-18:00 <br>
+                     сб-нд вихідний
+                  </div>
+                  <a href="mailto:broker.vincar@gmail.com" class="footer__email row mt-4 m-3 justify-content-center">broker.vincar@gmail.com</a>
+               </div>
+               <div class="col m-4">
+                  <div class="footer__content-address">
+                     <div class="footer-address__img"></div>
+                     <div class="footer-address__text">м. Вінниця,
                         Хмельницьке
                         шосе 7 км
-                    </div>
-                </div>
-                <div class="footer__content-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2604.867093796087!2d28.3909576152818!3d49.241008981644065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5d46bdf9aa69%3A0x718a47764a2aadd2!2sMytnyy%20Broker%20Hladkyy%20D.i!5e0!3m2!1sru!2sua!4v1627568270855!5m2!1sru!2sua"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
+                     </div>
+                  </div>
+                  <div class="footer__content-map">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2604.867093796087!2d28.3909576152818!3d49.241008981644065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5d46bdf9aa69%3A0x718a47764a2aadd2!2sMytnyy%20Broker%20Hladkyy%20D.i!5e0!3m2!1sru!2sua!4v1627568270855!5m2!1sru!2sua"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-</footer>
+         </div>
+      </footer>
+      <!-- MDB -->
+      <script type="text/javascript" src="js/mdb.min.js"></script>
 
-
-<!-- MDB -->
-<script type="text/javascript" src="js/mdb.min.js"></script>
-<!-- Custom scripts -->
-<script type="text/javascript"></script>
-</body>
+      <!-- Custom scripts -->
+      <script type="text/javascript" src="js/сalc.js" ></script>
+   </body>
 </html>
